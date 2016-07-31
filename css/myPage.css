@@ -1,0 +1,11 @@
+.item-divider{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    min-height: 15px;
+}
+.item-avatar-left img:first-child, .item-avatar img:first-child,.item-avatar-left .item-content>img:first-child{
+    border-radius: 0px;
+}
+.option p{
+    line-height: 36px;
+}

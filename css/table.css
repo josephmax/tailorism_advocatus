@@ -1,0 +1,19 @@
+th, td{
+    border:1px solid black;
+    text-align: center;
+    height: 36px;
+    line-height: 36px;
+    font-size: 12px;
+}
+table{
+    width: 96%;
+    margin: 0 auto;
+}
+.pager{
+    text-align: center;
+}
+.description{
+    width: 96%;
+    margin: 0 auto;
+    text-align: center;
+}

@@ -1,0 +1,17 @@
+<ion-view title="代言人管理">
+    <link rel="stylesheet" href="./css/cashPage.css"/>
+    <ion-nav-bar>
+        <ion-nav-back-button>
+            <i class="icon ion-android-arrow-back"></i>返回
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content>
+        <div class="sectionTitle"><span>可提现收益: {{remaining}}元</span></div>
+        <div class="cashAmount" ng-class="{true: 'chosen', false: 'unchosen'}[chosen==200]" ng-click="choseCash(200)">200</div>
+        <div class="cashAmount" ng-class="{true: 'chosen', false: 'unchosen'}[chosen==500]" ng-click="choseCash(500)">500</div>
+        <div class="cashAmount" ng-class="{true: 'chosen', false: 'unchosen'}[chosen==1000]" ng-click="choseCash(1000)">1000</div>
+        <section class="sep">选择提现金额：{{chosen}}元</section>
+        <div id="takeCash" ng-click="takeMoney(chosen)" ng-class="{true: 'available', false: 'unavailable'}[chosen!=0]">提交提现申请</div>
+    </ion-content>
+
+</ion-view>

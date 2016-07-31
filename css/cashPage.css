@@ -1,0 +1,49 @@
+.unchosen{
+    border: 1px solid black;
+    width: 80%;
+    height: 40px;
+}
+.cashAmount{
+    text-align: center;
+    line-height: 40px;
+    margin: 15px auto;
+    transition:.3s ease;
+}
+.chosen{
+    color: #ffffff;
+    background-color: royalblue;
+    width: 80%;
+}
+.sectionTitle{
+    width: 80%;
+    margin: 0 auto;
+}
+.sep{
+    border-top: 1px solid #666;
+    color: #666;
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+#takeCash{
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    width: 60%;
+    border-radius:20px;
+    margin: 15px auto;
+    color: #ffffff;
+    transition: .5s ease;
+}
+.available{
+    background-color: royalblue;
+    border:1px solid royalblue;
+}
+.unavailable{
+    background-color: #666;
+    border:1px solid #666;
+}
+.scroll{
+    padding-top: 20px;
+}

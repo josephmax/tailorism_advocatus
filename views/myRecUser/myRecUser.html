@@ -1,0 +1,31 @@
+<ion-view title="代言人管理">
+    <link rel="stylesheet" href="./css/table.css" type="text/css"/>
+    <ion-nav-bar>
+        <ion-nav-back-button>
+            <i class="icon ion-android-arrow-back"></i>返回
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content>
+        <div class="description">
+            <span>我推荐的用户数量：{{recUserList.user_count}}</span>
+            <span>收益：{{user.user_profit|currency:"￥"}}</span>
+        </div>
+        <table>
+            <tr>
+                <th>用户</th>
+                <th>关注时间</th>
+                <th>收益</th>
+            </tr>
+            <tr ng-repeat="item in recUserList.data">
+                <td>{{item.name}}</td>
+                <td>{{item.create_time}}</td>
+                <td>{{user.profitpp}}</td>
+            </tr>
+        </table>
+        <ion-infinite-scroll distance="1%" on-infinite="loadMore()" immediate-check="false"></ion-infinite-scroll>
+
+        <!--<div class="pager">
+        <a href="javascript:void(0)">{{orderList.pager.page}}</a>
+        </div>-->
+    </ion-content>
+</ion-view>

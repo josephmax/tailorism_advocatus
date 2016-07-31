@@ -1,0 +1,64 @@
+<ion-view title="代言人管理">
+    <link rel="stylesheet" href="./css/myPage.css" type="text/css"/>
+    <ion-nav-bar>
+        <ion-back-button>
+            <i class="icon ion-android-arrow-back"></i>
+        </ion-back-button>
+    </ion-nav-bar>
+    <ion-content>
+        <ion-list class="list">
+            <ion-item class="item item-thumbnail-left">
+                <img ng-src="{{userInfo.avatar_url}}"/>
+                <div>
+                    <p>昵称：{{userInfo.name}}</p>
+                    <p>电话：{{userInfo.phone}}</p>
+                    <p>总收益：{{userInfo.total|currency:"￥"}}</p>
+                    <p>注册时间：{{userInfo.create_time}}</p>
+                </div>
+            </ion-item>
+            <div class="item item-divider">
+            </div>
+            <ion-item class="item item-avatar-left item-icon-right option" ui-sref="myQrcode">
+                <img src="./images/loginbj.jpg"/>
+                <p>专属二维码</p>
+                <i class="icon ion-arrow-right-c"></i>
+            </ion-item>
+            <div class="item item-divider">
+            </div>
+            <ion-item class="item item-avatar-left item-icon-right option" ui-sref="myRecUser">
+                <img src="./images/loginbj.jpg"/>
+                <p>我推荐的关注用户</p>
+                <i class="icon ion-arrow-right-c">{{userInfo.scan_count}}</i>
+            </ion-item>
+            <div class="item item-divider">
+            </div>
+            <ion-item class="item item-avatar-left item-icon-right option" ui-sref="myRecUser">
+                <img src="./images/loginbj.jpg"/>
+                <p>我推荐的注册用户</p>
+                <i class="icon ion-arrow-right-c">{{userInfo.refer}}</i>
+            </ion-item>
+            <div class="item item-divider">
+            </div>
+            <ion-item class="item item-avatar-left item-icon-right option" ui-sref="myRecOrder">
+                <img src="./images/loginbj.jpg"/>
+                <p>我推荐的订单</p>
+                <i class="icon ion-arrow-right-c">{{userInfo.order_count}}</i>
+            </ion-item>
+            <div class="item item-divider">
+            </div>
+            <ion-item class="item item-avatar-left item-icon-right option" ui-sref="myProfit">
+                <img src="./images/loginbj.jpg"/>
+                <p>我的收益</p>
+                <i class="icon ion-arrow-right-c"></i>
+            </ion-item>
+            <div class="item item-divider">
+            </div>
+            <ion-item class="item item-avatar-left option" ng-click="logOut()">
+                <img src="./images/loginbj.jpg"/>
+                <p>退出登录</p>
+            </ion-item>
+            <div class="item item-divider">
+            </div>
+        </ion-list>
+    </ion-content>
+</ion-view>

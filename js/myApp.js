@@ -1,0 +1,47 @@
+/**
+ * Created by Administrator on 2016/7/26.
+ */
+myApp.config(function($stateProvider,$urlRouterProvider){
+    $stateProvider.state("login",{
+        url:'/login',
+        templateUrl:'views/login/login.html',
+        controller:'loginCtrl'
+    });
+    $stateProvider.state("myPage",{
+        url:'/myPage',
+        templateUrl:'views/myPage/myPage.html',
+        controller:'myPageCtrl'
+    });
+    $stateProvider.state("myRecUser",{
+        url:'/myRecUser',
+        templateUrl:'views/myRecUser/myRecUser.html',
+        controller:'myRecUserCtrl'
+    });
+    $stateProvider.state("myRecScanUser",{
+        url:'/myRecScanUser',
+        templateUrl:'views/myRecScanUser/myRecScanUser.html',
+        controller:'myRecScanUserCtrl'
+    });
+    $stateProvider.state("myRecOrder",{
+        url:'/myRecOrder',
+        templateUrl:'views/myRecOrder/myRecOrder.html',
+        controller:'myRecOrderCtrl'
+    });
+    $stateProvider.state("myProfit",{
+        url:'/myProfit',
+        templateUrl:'views/myProfit/myProfit.html',
+        controller:'myProfitCtrl'
+    });
+    $stateProvider.state("cashPage",{
+        url:'/cashPage',
+        templateUrl:'views/cashPage/cashPage.html',
+        controller:'cashPageCtrl'
+    });
+    $stateProvider.state("myQrcode",{
+        url:'/myQrcode',
+        templateUrl:'views/myQrcode/myQrcode.html',
+        controller:'myQrcodeCtrl'
+    });
+
+    $urlRouterProvider.otherwise("/login");
+});
